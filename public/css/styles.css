@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Montserrat";
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 6px grey;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #404040;
+}
+
+li a:active {
+    color: black;
+}
+
+li a:visited {
+    color: black;
+}
+
+.logo {
+    margin-left: 5rem;
+    font-family: "Dancing Script";
+}
+
+.logo-img {
+    margin-left: 2rem;
+    width: 30px;
+    height: 30px;
+}
+
+.center-div {
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+
+input {
+    height: 6vh;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    font-size: medium;
+    border: none;
+    border-width: thin;
+    border-color: gray;
+}
+
+button {
+	box-shadow: 0px 4px 19px -4px #ff85b5;
+	background-color:#f2337f;
+	border-radius:6px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding: 0.5rem;
+	text-decoration:none;
+    border: none;
+    width: 100%;
+    height: 8vh;
+    margin-top: 1rem;
+}
+button:hover {
+	background-color:#ff1974;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+  padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 12vh;
+    width: 100%;
+    background-color: #d9abff;
+    box-shadow: 1px 1px 6px grey;
+}
+
+.camContainer {
+  width: 600px;
+  height: 450px;
+}
+
+.picture_from_cam {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.picture_from_cam img {
+  border: solid;
+  width: 500px;
+  height: auto;
+}
+
+#snap {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%
+}
+
+#snap img {
+  width: 50px;
+  height: 50px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.camera-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+}
+
+.file-input input {
+  display: none;
+}
+
+.file-input label img {
+  width: 50px;
+  height: 50px;
+  margin-left: 2rem;
+}
+
+.file-input label:hover {
+  cursor: pointer;
+}
+h3 {
+  margin-top: 3rem;
+  font-size: 30px;
+}
+h2 {
+  margin-bottom: 2rem;
+}
+
+.text {
+  width: 50%;
+}

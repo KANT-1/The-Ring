@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">The Ring</h1>
+        <img class= logo-img src="../css/alliance.png" alt="">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="center-div">
+      <h3>Enter your information</h3>
+      <form>
+        <input id="name" type="text" name="name" value="" placeholder="Name">
+        <textarea id="message" name="message" rows="20" cols="80" placeholder="Enter message:"></textarea>
+        <button id="email-button">Send</button>
+      </form>
+    </div>
+    <footer>
+        <p>Copyright The Ring 2021</p>
+    </footer>
+    <script type="text/javascript">
+    const name = document.getElementById("name").innerHTML;
+    const message = document.getElementById("message").innerHTML;
+    document.getElementById("email-button").addEventListener("click", () => {
+      window.open(`mailto:kmansukh@gmail.com?subject=${nameOfSender}&body=${message}`);
+    });
+    </script>
+</body>
+</html>
